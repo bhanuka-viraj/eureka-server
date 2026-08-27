@@ -8,21 +8,22 @@
 ---
 
 ## Project Description
-Spring Cloud Eureka Discovery and Service Registry server for dynamic multi-zone instance discovery on GCP.
+Spring Cloud Netflix Eureka service registry providing dynamic service discovery, heartbeat health monitoring, and multi-zone high availability for all EduCloud microservices.
 
 ---
 
 ## Technology Stack
 - Java 25
 - Spring Boot 4.1.1
-- Spring Cloud 2025.1.3
+- Spring Cloud Netflix Eureka Server (2025.1.3)
 - PM2 Process Manager
-- Google Cloud Platform
 
 ---
 
-## Getting Started & Local Setup
-```bash
+## Running Locally
+- Default Port: 8761
+- Dashboard URL: http://localhost:8761
+`ash
 ./mvnw clean package
 java -jar target/eureka-server-0.0.1-SNAPSHOT.jar
-```
+`
